@@ -1,5 +1,10 @@
-const player1 = { name: "jhon doe", mark: "X"};
-const player2 = { name: "jane doe", mark: "O"};
+const player1 = { name, mark: "X"};
+const player2 = { name, mark: "O"};
+
+const modal = document.querySelector(".modal");
+
+const getP1Name = document.querySelector("#p1_name");
+const getP2Name = document.querySelector("#p2_name");
 
 const board = {
     layer1: ["","",""],
@@ -10,10 +15,7 @@ const board = {
 let turns = 0;
 
 function GamesBoard(){
-    console.log(player1)
-    console.log(player2)
-    console.log(board)
-    console.log("Inital Turns: " + turns)
+    modal.showModal();
 }
 
 function Turn(marked){
@@ -114,6 +116,17 @@ function Turn(marked){
         }
     }
 }
+
+const startButton = document.querySelector("#startBtn");
+startButton.addEventListener("click", (e) => {
+    player1.name = getP1Name.value;
+    player2.name = getP2Name.value;
+
+    console.log(player1.name);
+    console.log(player2.name);
+
+    modal.close()
+})
 // Untuk game
 // Membuat player
 // Selanjutnya membuat sebuah papan
