@@ -11,25 +11,25 @@
     <p>This is Tic Tac Toe Game</p>
     <div class="board-container">
         <table class="line-board">
-            <tr class="trow one">
-                <th class="tcolumn one"></th>
-                <th class="tcolumn two"></th>
-                <th class="tcolumn three"></th>
+            <tr class="trow">
+                <th class="tcolumn" data-value=0></th>
+                <th class="tcolumn" data-value=1></th>
+                <th class="tcolumn" data-value=2></th>
             </tr>
-            <tr class="trow two">
-                <th class="tcolumn one"></th>
-                <th class="tcolumn two"></th>
-                <th class="tcolumn three"></th>
+            <tr class="trow">
+                <th class="tcolumn" data-value=3></th>
+                <th class="tcolumn" data-value=4></th>
+                <th class="tcolumn" data-value=5></th>
             </tr>
-            <tr class="trow three">
-                <th class="tcolumn one"></th>
-                <th class="tcolumn two"></th>
-                <th class="tcolumn three"></th>
+            <tr class="trow">
+                <th class="tcolumn" data-value=6></th>
+                <th class="tcolumn" data-value=7></th>
+                <th class="tcolumn" data-value=8></th>
             </tr>
         </table>
     </div>
 
-    <dialog class="modal">
+    <dialog class="initModal">
         <form>
             <div class="P1">
                 <label for="p1_name">Player 1's Name:</label>
@@ -44,6 +44,22 @@
     
             <button type="button" id="startBtn">Let's Start</button>
         </form>
+    </dialog>
+
+    <dialog class="endModal">
+        <p class="words"></p>
+        <div class="score-dislpay">
+            <div class="player one">
+                <p>Player 1</p>
+                <h2 class="Score"></h2>
+            </div>
+            <div class="player two">
+                <p>Player 2</p>
+                <h2 class="Score"></h2>
+            </div>
+        </div>
+        <button type="button" id="restartBtn">Restart Game</button>
+        <button type="button" id="againBtn">Play Again</button>
     </dialog>
 
 </body>
