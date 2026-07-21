@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Odin Tic Tac Toe</title>
     <script src="scipt.js" defer></script>
 </head>
 <body>
-    <p>This is Tic Tac Toe Game</p>
+    <p class="title">This is Tic Tac Toe Game</p>
     <div class="board-container">
         <table class="line-board">
             <tr class="trow">
@@ -32,13 +35,13 @@
     <dialog class="initModal">
         <form>
             <div class="P1">
-                <label for="p1_name">Player 1's Name:</label>
-                <p class="player mark">X</p>
+                <label for="p1_name">Player 1's Name</label>
+                <p class="player mark x">X</p>
                 <input type="text" id="p1_name" name="P1_name" value="jhon doe">
             </div>
             <div class="P2">
-                <label for="p2_name">Player 2's Name:</label>
-                <p class="player mark">O</p>
+                <label for="p2_name">Player 2's Name</label>
+                <p class="player mark o">O</p>
                 <input type="text" id="p2_name" name="P2_name" value="jane doe">
             </div>
     
@@ -58,8 +61,10 @@
                 <h2 class="Score"></h2>
             </div>
         </div>
-        <button type="button" id="restartBtn">Restart Game</button>
-        <button type="button" id="againBtn">Play Again</button>
+        <div class="btnArea">
+            <button type="button" id="restartBtn">Restart Game</button>
+            <button type="button" id="againBtn">Play Again</button>
+        </div>
     </dialog>
 
 </body>

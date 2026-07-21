@@ -29,8 +29,10 @@ markedSpot.forEach(spot => {
                 if (board.layer1[spot.dataset.value] === "") {
                     if (turns%2 === 0) {
                         marked.textContent = player1.mark;
+                        marked.classList.add("x");
                     } else {
                         marked.textContent = player2.mark;
+                        marked.classList.add("o");
                     }
                     marked.classList.add("mrkdSptd");
                     spot.appendChild(marked);
@@ -40,8 +42,10 @@ markedSpot.forEach(spot => {
                     if (board.layer2[spot.dataset.value - 3] === "") {
                         if (turns%2 === 0) {
                         marked.textContent = player1.mark;
+                        marked.classList.add("x");
                     } else {
                         marked.textContent = player2.mark;
+                        marked.classList.add("o");
                     }
                     marked.classList.add("mrkdSptd");
                     spot.appendChild(marked);
@@ -51,8 +55,10 @@ markedSpot.forEach(spot => {
                     if (board.layer3[spot.dataset.value - 6] === "") {
                         if (turns%2 === 0) {
                         marked.textContent = player1.mark;
+                        marked.classList.add("x");
                     } else {
                         marked.textContent = player2.mark;
+                        marked.classList.add("o");
                     }
                     marked.classList.add("mrkdSptd");
                     spot.appendChild(marked);
